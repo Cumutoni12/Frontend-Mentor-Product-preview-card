@@ -1,0 +1,136 @@
+.outfit {
+  font-family: "Outfit", serif;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.content {
+  font-size: 10px;
+  flex: 0 0 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+#cart {
+  background-color: hsl(158, 36%, 37%);
+  padding: 2px 25px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  margin-bottom: 2px;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.price {
+  padding: 5px;
+  font-style: oblique;
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+.strike {
+  text-decoration: line-through;
+  float: right;
+  position: relative;
+  top: -1em;
+  margin-top: 20px;
+}
+
+.big {
+  color: hsl(158, 36%, 37%);
+}
+
+.last {
+  justify-content: center;
+  padding: 10px;
+  padding: 2px;
+}
+
+.per {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.title {
+  font-size: 3.5em;
+  font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+}
+
+.icon {
+  padding: 5px;
+}
+.solar {
+  font-weight: lighter;
+  font-size: 1.8em;
+}
+
+.add {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+@media (max-width: 375px) {
+  .card {
+    height: 450px;
+    width: 450px;
+  }
+  .content {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .card {
+    height: 350px;
+    width: 350px;
+  }
+  .content {
+    font-size: 6px;
+  }
+}
